@@ -74,3 +74,12 @@ The Calculating Point Mutations problem at Rosalind [http://rosalind.info/proble
 
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+
+# Exercism CPP Build and Test Environment Configuration
+
+Be sure to update the "DIR" arg on line 5 of the Dockerfile to be the same as the example name. In this case, it is `hamming`.
+
+```
+docker build --rm -f "Dockerfile" -t exercism-cpp-hamming:test-1 .
+```
+
