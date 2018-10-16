@@ -35,3 +35,9 @@ make[1]: *** [CMakeFiles/hello-world.dir/all] Error 2
 Makefile:83: recipe for target 'all' failed
 make: *** [all] Error 2
 ```
+
+# Docker Cleanup
+Run this to remove all images with a `test` tag
+```
+docker rmi $(docker images --format '{{.Repository}}:{{.Tag}}' | grep ':test')
+```
